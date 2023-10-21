@@ -78,6 +78,41 @@ body {
 }
 
 /* INFORMATION SECTION */
-.information-box > img {
-    height: 100px;
+.information {
+    padding: 80px 30px;
 }
+
+.information-box {
+    min-height: 15rem;
+    display: flex;
+    gap: 20px;
+}
+
+.information-box > .text-wrapper {
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.text-wrapper > p {
+    line-height: 35px;
+    font-size: 22px;
+}
+
+.text-wrapper > a {
+    font-size: 20px;
+    color: #4c5fd5;
+    text-decoration: none;
+}
+
+.text-wrapper > a:hover {
+    text-decoration: underline;
+}
+
+.information-box > img {
+    height: 70px;
+}
+
+/* FOOTER SECTION */
