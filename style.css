@@ -47,7 +47,7 @@ body {
 .hero {
     min-width: 100vw;
     min-height: 60vh;
-    padding: 30px;
+    padding: 16px;
     text-align: center;
     background-color: #dadbf1;
     display: flex;
@@ -65,7 +65,8 @@ body {
 
 .hero > input {
     min-height: 60px;
-    min-width: 350px;
+    width: 100%;
+    min-width: 18rem;
     padding: 0 20px;
     border: 1px solid #000000;
     border-radius: 5px;
@@ -74,4 +75,9 @@ body {
 .hero > input::placeholder {
     font-size: 18px;
     font-family: 'Rubik', sans-serif;
+}
+
+/* INFORMATION SECTION */
+.information-box > img {
+    height: 100px;
 }
