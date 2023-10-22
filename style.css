@@ -112,7 +112,6 @@ body {
 }
 
 .information-box > .text-wrapper {
-    margin-bottom: 100px;
     line-height: 35px;
     display: flex;
     flex-direction: column;
@@ -229,8 +228,8 @@ footer a {
     }
 
     .information-box {
-        min-width: 500px;
-        min-height: 325px;
+        min-width: 550px;
+        min-height: 250px;
         flex: 1;
     }
 
