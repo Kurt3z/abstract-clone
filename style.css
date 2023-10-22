@@ -207,6 +207,9 @@ footer a {
     .top--left-bar a {
         font-size: 24px;
     }
+    .top--right-bar > button {
+        cursor: pointer;
+    }
     .top--right-bar > button:first-child {
         background-color: #191a1b;
         border: 1px solid #fff;
@@ -215,6 +218,11 @@ footer a {
         background-color: #4c5fd5;
         margin-left: 1rem;
         border: none;
+        transition: 0.5s;
+    }
+    .top--right-bar > button:last-child:hover {
+        background-color: #fff;
+        color: #191a1b;
     }
 
     .hero > h1 {
