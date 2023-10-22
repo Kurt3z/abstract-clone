@@ -38,6 +38,7 @@ body {
 .top--left-bar a {
     font-size: 16px;
     color: #ffffff;
+    text-decoration: none;
 }
 
 .logo-wrap > a {
@@ -86,11 +87,17 @@ body {
     padding: 0 20px;
     border: 1px solid #000000;
     border-radius: 5px;
+    outline: none;
 }
 
 .hero > input::placeholder {
     font-size: 18px;
     font-family: 'Rubik', sans-serif;
+}
+
+.hero > input:hover,
+.hero > input:focus-visible {
+    border: 2px solid blue;
 }
 
 /* INFORMATION SECTION */
@@ -101,15 +108,15 @@ body {
 .information-box {
     min-height: 15rem;
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 
 .information-box > .text-wrapper {
     margin-bottom: 100px;
+    line-height: 35px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    gap: 20px;
+    gap: 10px;
 }
 
 .text-wrapper > p {
@@ -128,7 +135,8 @@ body {
 }
 
 .information-box > img {
-    height: 70px;
+    height: 80px;
+    align-self: flex-start;
 }
 
 /* FOOTER SECTION */
@@ -167,9 +175,71 @@ footer a {
 
 .footer-section.copyright > p {
     margin-bottom: 12px;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .copyright > img {
     margin-bottom: 12px;
+}
+
+@media (min-width: 40rem) {
+    #top-bar {
+        justify-content: space-between;
+        min-height: 12vh;
+        padding: 0 100px;
+    }
+    .top--left-bar a {
+        font-size: 24px;
+    }
+    .top--right-bar > button {
+        display: inline-block;
+        padding: 10px 40px;
+        font-size: 22px;
+        color: #fff;
+        border-radius: 8px;
+    }
+    .top--right-bar > button:first-child {
+        background-color: #191a1b;
+        border: 1px solid #fff;
+    }
+    .top--right-bar > button:last-child {
+        background-color: #4c5fd5;
+        margin-left: 1rem;
+        border: none;
+    }
+
+    .hero > h1 {
+        font-size: clamp(64px, 80px, 82px);
+    }
+
+    .hero > input {
+        min-width: 500px;
+        max-width: 700px;
+    }
+
+    .information {
+        max-width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    .information-box {
+        min-width: 500px;
+        min-height: 325px;
+        flex: 1;
+    }
+
+    footer {
+        padding: 40px 100px;
+        min-height: 40vh;
+    }
+
+    .footer-section.copyright {
+        align-self: flex-end;
+    }
 }
