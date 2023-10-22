@@ -95,6 +95,7 @@ body {
 }
 
 .hero > input::placeholder {
+    color: #191a1b;
     font-size: 18px;
     font-family: 'Rubik', sans-serif;
 }
